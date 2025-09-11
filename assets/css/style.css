@@ -1,0 +1,35 @@
+:root{
+  --bg:#0b1020; --card:#121a33; --text:#e9eefb; --muted:#9fb0d6; --acc:#4f7dfa; --danger:#ff6b6b; --ok:#33d2a5;
+  --border: #223055;
+}
+*{box-sizing:border-box}
+body{margin:0; font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial; background:var(--bg); color:var(--text);}
+a{color:var(--acc); text-decoration:none}
+.container{max-width:1000px; margin:0 auto; padding:16px}
+.between{display:flex; align-items:center; justify-content:space-between}
+.site-header{border-bottom:1px solid var(--border);}
+.site-header h1{margin:0; font-size:20px}
+.site-header nav a{margin-left:12px}
+.site-header nav .danger{color:var(--danger)}
+.site-footer{border-top:1px solid var(--border); margin-top:40px}
+.card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px; box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.grid{display:grid; gap:16px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.input, textarea, select{width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--border); background:#0e1530; color:var(--text)}
+label{display:block; font-size:13px; color:var(--muted); margin-bottom:8px}
+.btn{display:inline-block; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:#18234a; color:var(--text); cursor:pointer}
+.btn.primary{background:var(--acc); border-color:transparent; color:white}
+.btn.danger{background:#2a1a22; border-color:#6e233f; color:#ff8aa5}
+.btn.ghost{background:transparent}
+.muted{color:var(--muted)}
+.table{width:100%; border-collapse:collapse; font-size:14px}
+.table th,.table td{border-bottom:1px solid var(--border); padding:10px; text-align:left; vertical-align:top}
+.status{padding:4px 8px; border-radius:999px; font-size:12px; border:1px solid var(--border)}
+.status.open{background:#1b274d}
+.status.in_progress{background:#47381d}
+.status.closed{background:#203d33}
+form .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+form .row > div{}
+textarea{min-height:120px; resize:vertical}
+.actions{display:flex; gap:8px; align-items:center}
+.empty{padding:24px; text-align:center; border:1px dashed var(--border); border-radius:14px}
